@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: rgb(207, 222, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container1 {
+        border-radius: 20px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        width: 640px;
+        height: 400px;
+      }
+      .container2 {
+        background-color: rgb(68, 68, 242);
+        border-radius: 20px;
+        width: 500px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: rgb(124, 124, 248);
+        margin-top: 30px;
+      }
+      .seven {
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+      }
+      .total {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-top: -40px;
+        font-size: 10px;
+      }
+      .your {
+        margin-top: -20px;
+        margin-bottom: 0px;
+        font-size: 20px;
+      }
+      .scored {
+        text-align: center;
+      }
+      .great {
+        margin-bottom: 0px;
+        margin-top: 30px;
+      }
+      .second {
+        display: flex;
+        flex-direction: column;
+        margin-top: 170px;
+        margin-left: -20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container1">
+      <div class="container2">
+        <p class="your">Your Result</p>
+        <div class="circle">
+          <h1 class="seven">76</h1>
+
+          <p class="total">of 100</p>
+        </div>
+        <h2 class="great">Great</h2>
+
+        <p class="scored">
+          You scored higher than 65% of <br />the people who have taken
+          <br />these tests.
+        </p>
+      </div>
+      <h3>Summary</h3>
+      <div class="second">
+        <div>Reaction 80 / 100 <br /></div>
+        <div>100 Memory 92 / 100 <br /></div>
+        <div>Verbal 61 / 100 <br /></div>
+        <div>Visual 72 / 100</div>
+        <button>Continue</button>
+      </div>
+    </div>
+  </body>
+</html>
